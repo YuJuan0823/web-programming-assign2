@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>線上報名</title>
+</head>
+
+<body>
+
+ <form>
+   <h1 id="reg_title">報名資料(*為必填)</h1>
+   <ol class="form">
+	   <li class="name">
+	      <label for "name">*姓名<label>
+	      <input id="name" type="text" maxLength="10" placeholder="最長10個字元" required>
+	   </li>
+
+       <li class="college">
+	      <label for "college">*學院<label>
+	      <input id="college" type="text" list="myCollege" required>
+		      <datalist id="myCollege">
+		        <option value="法學院">
+		        <option value="社科院">
+		        <option value="文學院">
+		        <option value="外語學院">
+		        <option value="理學院">
+		        <option value="傳播學院">
+		        <option value="商學院">
+		        <option value="國際事務學院">
+		        <option value="教育學院">
+	   </li>
+
+	   <li class="phone">
+	      <label for "phone">*手機<label>
+	      <input id="phone" name="number" pattern=[0-9] maxLength="10" placeholder="最長10各字元且只能為數字" required>
+	   </li>
+
+	   <li class="e-mail">
+	      <label for "email">*Email<label>
+	      <input id="email" type="email" required>
+	   </li>
+
+	   <li class="birthday">
+	      <label for "birthday">生日<label>
+	      <input id="birthday" type="date">
+	   </li>
+
+   </ol>
+
+    <input id="submit" type="submit" value="送出">
+
+ </form>
+
+</body>
+</html>
